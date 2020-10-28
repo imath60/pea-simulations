@@ -24,7 +24,8 @@ class BaiduFeedersSearch extends PeaSimulation {
     .acceptEncodingHeader("gzip, deflate")
     .acceptLanguageHeader("en-US,en;q=0.5")
     .userAgentHeader("Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:16.0) Gecko/20100101 Firefox/16.0")
-
+    .disableFollowRedirect
+  
   // https://gatling.io/docs/current/session/feeder#feeder
   // 每次生成随机关键字
   // val feeder = Iterator.continually((Map("wd" -> (Random.alphanumeric.take(10).mkString))))
