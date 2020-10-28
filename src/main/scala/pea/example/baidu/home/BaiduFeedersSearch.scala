@@ -38,7 +38,7 @@ class BaiduFeedersSearch extends PeaSimulation {
         .get("/s?wd=${wd}")
         .check(
           status.is(200), // 响应码, 是200
-          substring("${wd}").exists, // 返回的 html 中包括 feeder 中内容
+//          substring("${wd}").exists, // 返回的 html 中包括 feeder 中内容
         )
     )
 
