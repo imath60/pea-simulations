@@ -24,6 +24,7 @@ class BaiduSearch extends PeaSimulation {
     .acceptEncodingHeader("gzip, deflate")
     .acceptLanguageHeader("en-US,en;q=0.5")
     .userAgentHeader("Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:16.0) Gecko/20100101 Firefox/16.0")
+    .disableFollowRedirect
 
   // 创建请求, 检索 "Gatling Pea" 关键字
   val search = exec(

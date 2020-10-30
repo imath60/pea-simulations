@@ -1,3 +1,8 @@
+val gatlingVersion = "3.3.1"
+val gatling = "io.gatling.highcharts" % "gatling-charts-highcharts" % gatlingVersion exclude("io.gatling", "gatling-app")
+val gatlingCompiler = "io.gatling" % "gatling-compiler" % gatlingVersion
+libraryDependencies ++= Seq(gatling, gatlingCompiler)
+
 // options: https://github.com/thesamet/sbt-protoc
 PB.protoSources in Compile := Seq(
   baseDirectory.value / "src/main/protobuf"
